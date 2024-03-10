@@ -1,0 +1,36 @@
+name: server
+run-name: ${{ github.actor }} is updating app
+on:
+  push:
+    branches:
+      - 'server'
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: npm install --progress=false
+      - name: Upload output
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: /
+  deploy:
+    needs: build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: install rsync
+        run: sudo apt install rsync
+      - name: add SSH_PRIVATE_KEY
+        run: mkdir -p ~/.ssh && echo "${{secrets.SSH_PRIVATE_KEY}}" >> ~/.ssh/id_dsa && chmod 600 ~/.ssh/id_dsa && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+      - name: Download output
+        uses: actions/download-artifact@v3
+        with:
+          name: output
+      - name: copy app configs
+        run: rsync -ravz --exclude '.git/' ./ root@${{vars.SERVER_IP}}:/var/servers/ELIF_TECH_TEST
+      - name: restart pm2
+        run: ssh -p22 root@${{vars.SERVER_IP}} "cd /var/servers/ELIF_TECH_TEST && pm2 restart ELIF_TECH_TEST"
