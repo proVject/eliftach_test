@@ -5,7 +5,7 @@ const BASE_URL = process.env.BASE_URL || 'localhost';
 
 app.get('/', (req, res) => {
   console.log(123)
-  res.status(200).send('Ok')
+  res.status(200).send('OK')
 })
 app.listen(PORT, () => {
   console.log(`server is running on ${BASE_URL}:${PORT}`)
