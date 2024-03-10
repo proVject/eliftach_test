@@ -6,8 +6,8 @@
 3. Host an application in any suitable way and share the URL to access it. (Used [github pages](https://provject.github.io/eliftach_test/))
 4. The front-end part can be done in JavaScript (with or without any framework), with any
   preferred design style. (Used React)
-5. The back-end part can be done on NodeJS with or without any framework. (Used Heroku for postgresql, hetzner vps as a host, NodeJs, express, npm i sequelize)
-6. Use any relational or non-relational database. (Used postgresql on heroku)
+5. The back-end part can be done on NodeJS with or without any framework. (Used hetzner vps as a host for nodeJs abd pg, NodeJs, express, sequelize)
+6. Use any relational or non-relational database. (Used postgresql on host with docker)
 
 ## [CV](https://drive.google.com/file/d/1GSssU-oLm_rUJtRxDBWsopN0ytrSt2CE/view?usp=sharing). Contact me!
 

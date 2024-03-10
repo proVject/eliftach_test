@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/eliftach_test/',
-  plugins: [react()],
+    base: '/eliftach_test/',
+    plugins: [react()],
+    envFile: './.env',
 })
