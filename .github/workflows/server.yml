@@ -33,5 +33,9 @@ jobs:
           name: output
       - name: copy app configs
         run: rsync -ravz --exclude '.git/' ./ root@${{vars.SERVER_IP}}:/var/servers/ELIF_TECH_TEST
-      - name: restart pm2
-        run: ssh -p22 root@${{vars.SERVER_IP}} "cd /var/servers/ELIF_TECH_TEST && pm2 restart ELIF_TECH_TEST"
+      - name: set env project env vars && restart pm2
+        run: ssh -p22 root@${{vars.SERVER_IP}} "cd /var/servers/ELIF_TECH_TEST && \
+          env \
+          SSH_PRIVATE_KEY=${{secrets.SSH_PRIVATE_KEY}} \
+          SERVER_IP=${{vars.SERVER_IP}} \
+          && pm2 restart ELIF_TECH_TEST"
