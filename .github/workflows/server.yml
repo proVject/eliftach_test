@@ -18,7 +18,7 @@ jobs:
         with:
           name: output
           path: |
-            /
+            *
   deploy:
     needs: build
     runs-on: ubuntu-20.04
