@@ -22,5 +22,6 @@ module.exports = new Sequelize(
     host: configs.host,
     port: configs.port,
     dialect: "postgres",
+    logging: false
   }
 );
