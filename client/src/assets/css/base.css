@@ -22,11 +22,11 @@
   --body-optical-sizing: auto;
 
   /*  colors */
-  --primary-color: #F4E041;
+  --primary-color: #0d5;
   --background-color: #F8F8F8;
   --preloader-background-color: #F8F8F888;
   --black-86-color: #000000;
-  --secondary-color: #00BDD3;
+  --secondary-color: #08f;
   --error-color: #CB3D40;
   --gray-color: #7E7E7E;
   --light-gray-color: #D0CFCF;
@@ -39,7 +39,8 @@
 }
 
 html,
-body{
+body,
+main{
   width: 100%;
   min-height: 100vh;
   font-family: var(--body-font-family);
@@ -132,6 +133,15 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+a:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
 }
 
 @media screen and (min-width: var(--medium-screen-wight)) {

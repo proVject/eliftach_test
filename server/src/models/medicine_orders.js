@@ -13,7 +13,7 @@ const MedicineOrder = sequelize.define('MedicineOrder', {
     type: DataTypes.INTEGER,
     allowNull: false,
     validate: {
-      min: 1, // Ensure at least one medicine is ordered
+      min: 1, // Ensure at least one medicine-list is ordered
     },
   },
   medicine_id: {

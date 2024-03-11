@@ -1,0 +1,44 @@
+.cartForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.row{
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  padding-bottom: 65px;
+  flex-wrap: wrap;
+}
+
+.fromWrapper{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  gap: 15px;
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+}
+
+.cart{
+  flex: 1;
+}
+
+.info{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  gap: 12px;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: var(--background-color);
+}

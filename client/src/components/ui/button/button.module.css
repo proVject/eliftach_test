@@ -1,0 +1,33 @@
+.button,
+.button:focus,
+.button:active,
+.button:hover{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button{
+  border-radius: 80px;
+  background-color: var(--primary-color);
+  color: var(--black-86-color);
+  line-height: 34px;
+  height: 34px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s background-color;
+}
+
+.button:focus,
+.button:active,
+.button:hover{
+  background-color: var(--secondary-color);
+}
+
+.button[disabled]{
+  cursor: default;
+  background-color: #B4B4B4;
+  color: #FFFFFF;
+}

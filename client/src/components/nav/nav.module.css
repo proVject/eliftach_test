@@ -9,3 +9,8 @@
   list-style: none;
   padding: 0;
 }
+
+.activeTab,
+.activeTab a{
+  color: var(--secondary-color);
+}

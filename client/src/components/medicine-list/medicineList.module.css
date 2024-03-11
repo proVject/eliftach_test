@@ -1,0 +1,11 @@
+.medicineList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  padding: 20px;
+  align-items: flex-start;
+  height: fit-content;
+}

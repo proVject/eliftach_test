@@ -1,0 +1,9 @@
+.cartList{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+}

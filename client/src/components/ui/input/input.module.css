@@ -1,0 +1,14 @@
+.label{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label input{
+  box-sizing: border-box;
+  border: 1px solid var(--gray-color);
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 8px;
+  background: none;
+}

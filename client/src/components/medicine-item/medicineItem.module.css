@@ -1,0 +1,29 @@
+.medicineItem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.medicineItem img {
+  width: 100%;
+  height: 80px;
+  background: var(--light-gray-color);
+}
+
+.medicineItem__info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button.added{
+  background-color: var(--secondary-color);
+}

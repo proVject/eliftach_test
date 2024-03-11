@@ -1,0 +1,6 @@
+.shop{
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  padding-bottom: 30px;
+}

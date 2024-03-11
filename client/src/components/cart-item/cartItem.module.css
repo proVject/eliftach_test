@@ -1,0 +1,28 @@
+.cartItem {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItem img {
+  min-width: 120px;
+  width: 100%;
+  max-width: 300px;
+  height: 120px;
+  aspect-ratio: 16/9;
+  background: var(--light-gray-color);
+}
+.info{
+  width: fit-content;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
