@@ -1,0 +1,11 @@
+.nav ul{
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+}
+
+.nav ul,
+.nav ul li{
+  list-style: none;
+  padding: 0;
+}
