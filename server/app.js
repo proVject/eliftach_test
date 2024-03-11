@@ -1,5 +1,5 @@
 require('./src/helpers/envs.js')()
-const config = require("./src/cinfig");
+const config = require("./src/config");
 const app = require('express')();
 const PORT = process.env.PORT || 4040;
 const BASE_URL = process.env.BASE_URL || 'localhost';
